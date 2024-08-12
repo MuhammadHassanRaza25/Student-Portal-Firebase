@@ -1,0 +1,77 @@
+body{
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 97vh;
+    background-color: rgb(238, 238, 238);
+}
+.informationDiv{
+    box-shadow:0px 0px 20px rgba(0, 0, 0, 0.1),0px 6px 6px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 10px;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 1%;
+    padding-bottom: 2.7%;
+    width: 85%;
+}
+/* header start */
+.HeaderDiv{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 1%;
+    margin-right: 4%;
+    margin-left: 4%;
+}
+.headingDiv h1{
+    color: rgb(0, 0, 207);
+}
+.signoutBtnDiv{
+    width: 50%;
+    text-align: end;
+}
+.signoutBtnDiv button{
+    width: 35%;
+    background-color: rgb(0, 0, 207);
+    color: white;
+    padding: 11px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: all 0.5s;
+    border: 2px solid rgb(0, 0, 207);
+    cursor: pointer;
+}
+.signoutBtnDiv button:hover{
+    background-color:transparent;
+    color: rgb(0, 0, 207);
+    transition: all 0.5s;
+}
+ /* header end */
+/* all spans styling start */
+span{
+    font-weight: bold;
+}
+/* all spans styling end */
+.allInfoDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.info{
+    width: 90%;
+    border: 2px solid lightgray;
+    background-color: rgb(251, 251, 251);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 0%;
+    transition: all 0.5s;
+}
+.info:hover{
+    border-color: rgb(0, 0, 207);
+    transition: all 0.5s;
+}
