@@ -2,24 +2,33 @@ body{
     font-family: sans-serif;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     height: 95vh;
+    background-color: rgb(238, 238, 238);
 }
+/* Course Form Start */
 .formDiv{
+    margin-top: 1%;
     box-shadow:0px 0px 20px rgba(0, 0, 0, 0.1),0px 6px 6px rgba(0, 0, 0, 0.1);
+    background-color: white;
     padding-right: 0px;
     padding-left: 0px;
     padding-top: 2%;
     padding-bottom: 3%;
     border-radius: 10px;
-    width: 90%;
+    width: 85%;
 }
 /* parent of heading & button start */
 .headerDiv{
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     align-items: center;
     margin-bottom: 3%;
+}
+.headingDiv h1{
+  color: rgb(0, 0, 207);  
 }
 .headerbtnDiv{
     width: 50%;
@@ -27,49 +36,56 @@ body{
 }
 .headerbtnDiv button{
    width: 40%;
-   background: blue;
+   background-color: rgb(0, 0, 207);
    color: white;
    padding: 13px;
    font-size: 20px;
    font-weight: bold;
    border-radius: 10px;
    transition: all 0.5s;
-   border: 2px solid blue;
+   border: 2px solid rgb(0, 0, 207);
    cursor: pointer;
 }
 .headerbtnDiv button:hover{
    background-color:transparent;
-   color: blue;
+   color: rgb(0, 0, 207);
    transition: all 0.5s;
 }
 /* parent of heading & button end */
-
 /* all inputs styling start */
 input{
     padding: 15px;
     width: 40.5%;
     border-radius: 10px;
-    border: 2px solid lightgray;
+    border: 2px solid lightgrey;
+    transition: all 0.5s;
+    font-weight: 600;
+    font-size: 15px;
 }
 input:hover{
-    border-color: blue;
+    border-color:rgb(0, 0, 207);
     transition: all 0.5s;
 }
 input:focus{
     outline: none;
-    border-color: blue;
+    border-color: rgb(0, 0, 207);
 }
 select{
     padding: 15px;
     width: 43.5%;
     border-radius: 10px;
     border: 2px solid lightgray;
+    transition: all 0.5s;
+    font-size: 15px;
+    font-weight: 600;
+    color: gray;
 }
 select:hover{
-    border-color: blue;
+    border-color: rgb(0, 0, 207);
+    transition: all 0.5s;
 }
 select:focus{
-    border-color:blue;
+    border-color:rgb(0, 0, 207);
 }
 /* all inputs styling end */
 .div1{
@@ -103,19 +119,207 @@ select:focus{
 .btnDiv button{
     margin-top: 2%;
     width: 89%;
-    background:blue;
-    border: 2px solid blue;
+    background:rgb(0, 0, 207);
+    border: 2px solid rgb(0, 0, 207);
     color: white;
     padding: 13px;
     font-size: 20px;
     font-weight: bold;
     border-radius: 10px;
     transition: all 0.5s;
-    border: 2px solid blue;
     cursor: pointer;
 }
 .btnDiv button:hover{
     background: transparent;
-    border: 2px solid blue;
-    color: blue;
+    border: 2px solid rgb(0, 0, 207);
+    color: rgb(0, 0, 207);
 }
+#copyright{
+    margin-top: 3%;
+    margin-bottom: -2%;
+    color: grey;
+    font-size: 12px;
+    text-align: center;
+}
+/* Course Form End */
+/* Login Form Start */
+.LoginformDiv{
+    margin-top: 1%;
+    box-shadow:0px 0px 20px rgba(0, 0, 0, 0.1),0px 6px 6px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 10px;
+    width: 32%;
+    height: 75vh;
+    padding: 5px;
+}
+.loginHeadingDiv h1{
+    color: rgb(0, 0, 207);
+    text-align: center;
+    margin-bottom: 15%;
+    margin-top: 10%;
+    font-size:40px;
+}
+.logininpDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.logininpDiv input{
+   width: 82%;
+   font-size: 17px;
+}
+.loginbtnDiv{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8%;
+}
+.loginbtnDiv button{
+    margin-top: 2%;
+    margin-bottom: 6%;
+    width: 89%;
+    background:rgb(0, 0, 207);
+    border: 2px solid rgb(0, 0, 207);
+    color: white;
+    padding: 13px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.loginbtnDiv button:hover{
+    background: transparent;
+    border: 2px solid rgb(0, 0, 207);
+    color: rgb(0, 0, 207);
+}
+.linkText{
+    color: gray;
+    font-weight: 600;
+}
+.linkText a{
+    text-decoration: none;
+    color: rgb(0, 0, 207);
+}
+/* Login Form End */
+/* Responsiveness Start */
+@media (max-width:1024px){
+    .formDiv{
+        padding: 30px;
+    }
+    .headerDiv{
+        margin-bottom: 5%;
+    }
+    .headingDiv h1{
+        font-size: 20px;
+    }
+    .headerbtnDiv button{
+         width: 70%;
+         padding: 10px;
+         font-size: 17px;
+    }
+    .btnDiv button{
+        width: 89%;
+        padding: 10px;
+        font-size: 17px;
+    }
+    input{
+        padding: 10px;
+    }
+    select{
+        padding: 10px;
+    }
+    .LoginformDiv{
+        width: 40%;
+    }
+    .loginHeadingDiv h1{
+        font-size:30px;
+        margin-top: 17%;
+        margin-bottom: 20%;
+    }
+    .loginbtnDiv button{
+        margin-top: 10%;
+        padding: 10px;
+        font-size: 20px;
+    }
+}
+@media(max-width:600px){
+    .headerDiv{
+        margin-bottom: 10%;
+    }
+    .headerbtnDiv{
+        text-align: center;
+    }
+    .headerbtnDiv button{
+        width: 100%;
+   }
+    .btnDiv button{
+        width: 95%;
+        padding: 10px;
+        font-size: 17px;
+        margin-top: 10%;
+    }
+    .LoginformDiv{
+        width: 70%;
+    }
+    .loginHeadingDiv h1{
+        font-size:30px;
+        margin-top: 17%;
+        margin-bottom: 20%;
+    }
+    .loginbtnDiv button{
+        margin-top: 10%;
+        padding: 10px;
+        font-size: 20px;
+    }
+    .div1{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .div2{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .div3{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .div4{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    input{
+        width: 90%;
+    }
+    select{
+        width: 94.7%;
+    }
+}
+@media(max-width:410px){
+    select{
+        width: 98.7%;
+    }
+    .headerbtnDiv{
+        width: 90%;
+        margin-bottom: 8%;
+    }
+    .headingDiv h1{
+        font-size: 20px;
+    }
+    .headerbtnDiv button{
+        width: 100%;
+   }
+   #copyright{
+    margin-top: 6%;
+   }
+   .LoginformDiv{
+    width: 90%;
+   }
+}
+/* Responsiveness Start */
