@@ -1,0 +1,121 @@
+body{
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+}
+.formDiv{
+    box-shadow:0px 0px 20px rgba(0, 0, 0, 0.1),0px 6px 6px rgba(0, 0, 0, 0.1);
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 2%;
+    padding-bottom: 3%;
+    border-radius: 10px;
+    width: 90%;
+}
+/* parent of heading & button start */
+.headerDiv{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 3%;
+}
+.headerbtnDiv{
+    width: 50%;
+    text-align: end;
+}
+.headerbtnDiv button{
+   width: 40%;
+   background: blue;
+   color: white;
+   padding: 13px;
+   font-size: 20px;
+   font-weight: bold;
+   border-radius: 10px;
+   transition: all 0.5s;
+   border: 2px solid blue;
+   cursor: pointer;
+}
+.headerbtnDiv button:hover{
+   background-color:transparent;
+   color: blue;
+   transition: all 0.5s;
+}
+/* parent of heading & button end */
+
+/* all inputs styling start */
+input{
+    padding: 15px;
+    width: 40.5%;
+    border-radius: 10px;
+    border: 2px solid lightgray;
+}
+input:hover{
+    border-color: blue;
+    transition: all 0.5s;
+}
+input:focus{
+    outline: none;
+    border-color: blue;
+}
+select{
+    padding: 15px;
+    width: 43.5%;
+    border-radius: 10px;
+    border: 2px solid lightgray;
+}
+select:hover{
+    border-color: blue;
+}
+select:focus{
+    border-color:blue;
+}
+/* all inputs styling end */
+.div1{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 2%;
+}
+.div2{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 2%;
+}
+.div3{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 2%;
+}
+.div4{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 2%;
+}
+.btnDiv{
+    display: flex;
+    justify-content: center;
+}
+.btnDiv button{
+    margin-top: 2%;
+    width: 89%;
+    background:blue;
+    border: 2px solid blue;
+    color: white;
+    padding: 13px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: all 0.5s;
+    border: 2px solid blue;
+    cursor: pointer;
+}
+.btnDiv button:hover{
+    background: transparent;
+    border: 2px solid blue;
+    color: blue;
+}
